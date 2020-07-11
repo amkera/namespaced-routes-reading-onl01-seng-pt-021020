@@ -9,7 +9,8 @@ Rails.application.routes.draw do
   scope '/admin' do 
     resources :stats, only: [:index]
   end 
-  #creates stats_path 
+  #creates stats_path and shows the index page 
+  
 
   root 'posts#index'
 end
