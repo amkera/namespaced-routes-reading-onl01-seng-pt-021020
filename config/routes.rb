@@ -20,6 +20,8 @@ Rails.application.routes.draw do
     resources :stats, only: [:index]
   end 
   
+  #The namespace method makes the assumption that the path prefix and module name match, saving us some typing.
+  
 
   root 'posts#index'
 end
